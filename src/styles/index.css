@@ -1,3 +1,51 @@
 /* 
     General Styles
 */
+
+#app{
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/christmas-snowy-background_1048-9078.jpg?w=1480&t=st=1701635400~exp=1701636000~hmac=09d6af4b9f03990ce32d32bf6a1fbab0f2764ae76baab508369f8013d7f03b60");
+}
+
+.card-group{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 6px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.card-character{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.card-character:hover{
+    transition: all 0.4s ease 0s;
+    border: 2px solid #ffc107;
+}
+
+.card-starships{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.card-starships:hover{
+    transition: all 0.4s ease 0s;
+    border: 2px solid #ffc107;
+}
+
+.card-species{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.card-species:hover{
+    transition: all 0.4s ease 0s;
+    border: 2px solid #ffc107;
+}

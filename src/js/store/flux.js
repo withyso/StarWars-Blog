@@ -16,14 +16,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
+			getCharacters: async () => {
+				try{
+					const response = await fetch("https://playground.4geeks.com/apis/fake/contact/agenda/yoel_agenda");
+					if(response.status !== 200){
+						console.log("Ha ocurrido un error", error)
+						return
+					}
+					const body = await response.json();
+					console.log(body);
+					return body;
+				}catch(error){
+					console.log(error);
+				}
+			}
+			
+			,
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();
