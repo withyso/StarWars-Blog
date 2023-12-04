@@ -2,9 +2,40 @@
     General Styles
 */
 
-#app{
+body{
     min-height: 100vh;
     background-image: url("https://img.freepik.com/free-vector/christmas-snowy-background_1048-9078.jpg?w=1480&t=st=1701635400~exp=1701636000~hmac=09d6af4b9f03990ce32d32bf6a1fbab0f2764ae76baab508369f8013d7f03b60");
+}
+
+.card{
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transition: all 0.1s ease 0s;
+    border: 2px solid #ffc107;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.allbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.next-previous-buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 40px;
 }
 
 .card-group{

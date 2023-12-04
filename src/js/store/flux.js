@@ -1,6 +1,10 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			API_URL: "https://www.swapi.tech/api/people/",
+			API_SPECIES: "https://www.swapi.tech/api/species/",
+			CHARACTERS_IMAGE: "https://starwars-visualguide.com/assets/img/characters/",
+			SPECIES_IMAGE: "https://starwars-visualguide.com/assets/img/species/",
 			demo: [
 				{
 					title: "FIRST",
@@ -16,9 +20,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
-			getCharacters: async () => {
+			getData: async (URL) => {
 				try{
-					const response = await fetch("https://playground.4geeks.com/apis/fake/contact/agenda/yoel_agenda");
+					const response = await fetch(URL);
 					if(response.status !== 200){
 						console.log("Ha ocurrido un error", error)
 						return
