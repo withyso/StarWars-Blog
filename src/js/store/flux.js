@@ -3,6 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			API_URL: "https://www.swapi.tech/api/people/",
 			API_SPECIES: "https://www.swapi.tech/api/species/",
+			API_STARSHIPS: "https://www.swapi.tech/api/starships/",
+			STARSHIPS_IMAGE:"https://starwars-visualguide.com/assets/img/starships/",
 			CHARACTERS_IMAGE: "https://starwars-visualguide.com/assets/img/characters/",
 			SPECIES_IMAGE: "https://starwars-visualguide.com/assets/img/species/",
 			demo: [
