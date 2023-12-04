@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { Todocard } from "../component/Todocard.jsx";
 import { useNavigate } from "react-router-dom";
+import { InfoCharacter } from "./infocharacter.js";
 
 export const PreCharacters = () => {
     const { store, actions } = useContext(Context);
@@ -58,12 +59,15 @@ export const PreCharacters = () => {
             <div className="container-fluid card-container">
                 {
                     characters.map((item)=>(
-                        <Todocard 
-                            name={item.name}
-                            uid={item.uid}
-                            imglink={store.CHARACTERS_IMAGE}
-                        />
-                    ))
+                        <Link to={`/infocharacter/${item.uid}`}>
+                            <Todocard 
+                                name={item.name}
+                                uid={item.uid}
+                                imglink={store.CHARACTERS_IMAGE}
+                                key={item.uid}
+                            />
+                        </Link>
+                        ))
                 }
                 
             </div>

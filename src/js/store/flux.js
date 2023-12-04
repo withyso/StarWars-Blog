@@ -31,10 +31,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						return
 					}
 					const body = await response.json();
-					console.log(body);
+					console.log("fetch realizado con exito")
 					return body;
 				}catch(error){
-					console.log(error);
+					console.log("ha ocurrido un error");
 				}
 			}
 			

@@ -5,6 +5,7 @@ import { Context } from "../store/appContext.js";
 
 export const Todocard = ({uid, name, imglink}) => {
 	const { store, actions } = useContext(Context);
+    const navigate = useNavigate();
 
 
     return (
