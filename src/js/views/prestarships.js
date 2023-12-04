@@ -26,7 +26,6 @@ export const PreStarships = () => {
 	}, [])
 
     useEffect(() => {
-		console.log(starships)
 	}, [starships])
 
 
@@ -43,14 +42,10 @@ export const PreStarships = () => {
                     <button className="btn btn-outline-warning next-page text-light" onClick={() =>{
                         console.log("me hiciste click")
                         handleStarships(nextPage);
-                        console.log(nextPage)
-                        console.log(characters)
                     }}>
                         Next page
                     </button>
                     <button className="btn btn-outline-warning next-page text-light" onClick={() =>{
-                        console.log("me hiciste click")
-                        console.log(previousPage)
                         handleStarships(previousPage);
                     }}>
                         Previous Page

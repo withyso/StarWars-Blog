@@ -44,14 +44,11 @@ export const PreSpecies = () => {
                     <button className="btn btn-outline-warning next-page text-light" onClick={() =>{
                         console.log("me hiciste click")
                         handleSpecies(nextPage);
-                        console.log(nextPage)
-                        console.log(characters)
                     }}>
                         Next page
                     </button>
                     <button className="btn btn-outline-warning next-page text-light" onClick={() =>{
                         console.log("me hiciste click")
-                        console.log(previousPage)
                         handleSpecies(previousPage);
                     }}>
                         Previous Page

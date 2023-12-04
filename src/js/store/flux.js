@@ -7,6 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			STARSHIPS_IMAGE:"https://starwars-visualguide.com/assets/img/starships/",
 			CHARACTERS_IMAGE: "https://starwars-visualguide.com/assets/img/characters/",
 			SPECIES_IMAGE: "https://starwars-visualguide.com/assets/img/species/",
+			FAVORITES: [],
 			demo: [
 				{
 					title: "FIRST",

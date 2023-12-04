@@ -27,7 +27,6 @@ export const PreCharacters = () => {
 	}, [])
 
     useEffect(() => {
-		console.log(characters)
 	}, [characters])
 
 
@@ -44,14 +43,12 @@ export const PreCharacters = () => {
                     <button className="btn btn-outline-warning next-page text-light" onClick={() =>{
                         console.log("me hiciste click")
                         handleCharacters(nextPage);
-                        console.log(nextPage)
-                        console.log(characters)
+                    
                     }}>
                         Next page
                     </button>
                     <button className="btn btn-outline-warning next-page text-light" onClick={() =>{
                         console.log("me hiciste click")
-                        console.log(previousPage)
                         handleCharacters(previousPage);
                     }}>
                         Previous Page
