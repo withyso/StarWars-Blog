@@ -10,9 +10,9 @@ export const Todocard = ({uid, name, imglink}) => {
 
     return (
         <div>
-            <div className="card" style={{width: "17rem",}} key={uid} id={uid}>
+            <div className="card bg-dark text-light" style={{width: "17rem",}} key={uid} id={uid}>
                     <img src={imglink + uid +'.jpg'} onError={(event) => {
-                        event.target.source = "https://starwars-visualguide.com/assets/img/placeholder.jpg"
+                        event.target.src = "https://starwars-visualguide.com/assets/img/placeholder.jpg"
                     }} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <p className="card-text">{name}</p>

@@ -58,11 +58,14 @@ export const PreSpecies = () => {
             <div className="container-fluid card-container">
                 {
                     species.map((item)=>(
-                        <Todocard 
-                            name={item.name}
-                            uid={item.uid}
-                            imglink={store.SPECIES_IMAGE}
-                        />
+                        <Link to={`/infospecies/${item.uid}`} className="text-light">
+                            <Todocard 
+                                name={item.name}
+                                uid={item.uid}
+                                imglink={store.SPECIES_IMAGE}
+                                key={item.uid}
+                            />
+                        </Link>
                     ))
                 }
                 

@@ -55,11 +55,14 @@ export const PreStarships = () => {
             <div className="container-fluid card-container">
                 {
                     starships.map((item)=>(
-                        <Todocard 
-                            name={item.name}
-                            uid={item.uid}
-                            imglink={store.STARSHIPS_IMAGE}
-                        />
+                        <Link to={`/infostarships/${item.uid}`} className="text-light">
+                            <Todocard 
+                                name={item.name}
+                                uid={item.uid}
+                                imglink={store.STARSHIPS_IMAGE}
+                                key={item.uid}
+                            />
+                        </Link>
                     ))
                 }
                 

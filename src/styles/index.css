@@ -80,3 +80,32 @@ body{
     transition: all 0.4s ease 0s;
     border: 2px solid #ffc107;
 }
+
+.list-group-item{
+    background-color: #212529;
+    border-color: #212529;
+    letter-spacing: .2rem;
+}
+
+.description{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.character-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.main-text{
+    letter-spacing: .5rem;
+}
+
+.list-group{
+    border-radius: 5px;
+}

@@ -12,6 +12,8 @@ import { PreCharacters } from "./views/precharacters";
 import { PreSpecies } from "./views/prespecies";
 import { PreStarships } from "./views/prestarships";
 import { InfoCharacter } from "./views/infocharacter";
+import { InfoStarships } from "./views/infostarships";
+import { InfoSpecies } from "./views/infospecies";
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -31,6 +33,8 @@ const Layout = () => {
 						<Route path="/prestarships" element={<PreStarships />} />
 						<Route path="/prespecies" element={<PreSpecies />} />
 						<Route path="/infocharacter/:charid" element={<InfoCharacter />} />
+						<Route path="/infostarships/:starid" element={<InfoStarships />} />
+						<Route path="/infospecies/:speid" element={<InfoSpecies />} />
 					</Routes>
 					<Footer />
 				</ScrollToTop>

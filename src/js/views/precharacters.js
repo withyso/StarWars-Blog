@@ -59,7 +59,7 @@ export const PreCharacters = () => {
             <div className="container-fluid card-container">
                 {
                     characters.map((item)=>(
-                        <Link to={`/infocharacter/${item.uid}`}>
+                        <Link to={`/infocharacter/${item.uid}`} className="text-light">
                             <Todocard 
                                 name={item.name}
                                 uid={item.uid}
